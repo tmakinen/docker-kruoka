@@ -70,6 +70,7 @@ jobs:
       - name: Stop container
         if: always()
         run: |
+          docker logs kruoka
           docker stop kruoka
       - name: Notify chat
         uses: arcticsecurity/rocketchat-notify@3619b46c95d49aca76682f8200f51ec6964ecb68  # v1.0.0
